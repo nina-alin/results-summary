@@ -27,13 +27,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/screenshot/laptop-screenshot.png)
-![](./assets/screenshot/tablet-screenshot.png)
-![](./assets/screenshot/mobile-screenshot.png)
+![](./assets/screenshot/desktop-solution.png)
+![](./assets/screenshot/mobile-solution.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -42,7 +40,6 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - SCSS
-- Flexbox
 
 ### What I learned
 
@@ -78,18 +75,23 @@ Example of code I'm proud of:
 ```
 ```scss
 .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-radius: 15px;
   padding: 0 2vh;
   font-weight: bases.$font-weight-normal;
   color: gray;
   height: 5vh;
-  width: 90%;
-strong {
-  color: bases.$neutral-dark-gray-blue;
-}
+  strong {
+    color: bases.$neutral-dark-gray-blue;
+  }
 }
 ```
 
@@ -105,10 +107,8 @@ I would love to improve my SCSS skills. I would also like to learn more about th
 ## Author
 
 - Gitlab - [ninaalin](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@nina-alin](https://www.frontendmentor.io/profile/nina-alin)
 - Twitter - [@karmirariel](https://www.twitter.com/karmirariel)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 

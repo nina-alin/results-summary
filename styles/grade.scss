@@ -1,12 +1,19 @@
 @use 'bases';
 
 .grade {
+  background: -webkit-gradient(linear, left top, left bottom, from(bases.$background-light-slate-blue), to(bases.$background-light-royal-blue));
+  background: -o-linear-gradient(bases.$background-light-slate-blue, bases.$background-light-royal-blue);
   background: linear-gradient(bases.$background-light-slate-blue, bases.$background-light-royal-blue);
   width: 100%;
   border-radius: 30px;
   height: 50vh;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   overflow: auto;
 
@@ -22,6 +29,8 @@ h1 {
 }
 
 .result {
+  background: -webkit-gradient(linear, left top, left bottom, from(bases.$circle-violet-blue), to(bases.$circle-persian-blue));
+  background: -o-linear-gradient(bases.$circle-violet-blue, bases.$circle-persian-blue);
   background: linear-gradient(bases.$circle-violet-blue, bases.$circle-persian-blue);
   border-radius: 100px;
   height: 20vh;

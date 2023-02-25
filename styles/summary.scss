@@ -3,20 +3,30 @@
 .summary {
   width: 100%;
   padding: 2vh 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 4vh;
 }
 
 h2 {
-    color: bases.$neutral-dark-gray-blue;
-    font-size: 1.3rem;
-    font-weight: bases.$font-weight-bold;
-    margin: 0;
+  color: bases.$neutral-dark-gray-blue;
+  font-size: 1.3rem;
+  font-weight: bases.$font-weight-bold;
+  margin: 0;
 }
 
 .scores-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 2vh;
 
@@ -26,8 +36,14 @@ h2 {
 }
 
 .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-radius: 15px;
   padding: 0 2vh;
@@ -79,28 +95,34 @@ h2 {
 }
 
 .continue {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 94%;
   button {
-      border: none;
-      height: 6vh;
-      border-radius: 30px;
-      color: bases.$neutral-white;
-      background-color: bases.$neutral-dark-gray-blue;
-      width: 90%;
-      font-weight: bases.$font-weight-bold;
+    border: none;
+    height: 6vh;
+    border-radius: 30px;
+    color: bases.$neutral-white;
+    background-color: bases.$neutral-dark-gray-blue;
+    width: 90%;
+    font-weight: bases.$font-weight-bold;
 
     @media (max-width: bases.$breakpoint-tablet) {
       width: 80%;
     }
-    }
+  }
 
-    &:hover {
-      button {
-        cursor: pointer;
-        background-color: bases.$primary-cobalt-blue;
-      }
+  &:hover {
+    button {
+      cursor: pointer;
+      background-color: bases.$primary-cobalt-blue;
+    }
   }
 }

@@ -1,0 +1,106 @@
+@use "bases";
+
+.summary {
+  width: 100%;
+  padding: 2vh 3vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+
+h2 {
+    color: bases.$neutral-dark-gray-blue;
+    font-size: 1.3rem;
+    font-weight: bases.$font-weight-bold;
+    margin: 0;
+}
+
+.scores-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+
+  @media (max-width: bases.$breakpoint-tablet) {
+    width: 90%;
+  }
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  padding: 0 2vh;
+  font-weight: bases.$font-weight-normal;
+  color: gray;
+  height: 5vh;
+  strong {
+    color: bases.$neutral-dark-gray-blue;
+  }
+}
+
+.title {
+  img {
+    vertical-align: middle;
+    margin-right: 1vh;
+  }
+}
+
+.reaction {
+  background-color: hsl(0, 90%, 98%);
+  .title {
+    color: bases.$primary-light-red;
+  }
+}
+
+.memory {
+  background-color: hsl(39, 100%, 97%);
+  .title {
+    color: bases.$primary-orangey-yellow;
+  }
+}
+
+.verbal {
+  background-color: hsl(166, 100%, 97%);
+  .title {
+    color: bases.$primary-green-teal;
+  }
+}
+
+.visual {
+  background-color: hsl(234, 85%, 97%);
+  .title {
+    color: bases.$primary-cobalt-blue;
+  }
+}
+
+.score {
+  font-weight: bases.$font-weight-bold;
+}
+
+.continue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 94%;
+  button {
+      border: none;
+      height: 6vh;
+      border-radius: 30px;
+      color: bases.$neutral-white;
+      background-color: bases.$neutral-dark-gray-blue;
+      width: 90%;
+      font-weight: bases.$font-weight-bold;
+
+    @media (max-width: bases.$breakpoint-tablet) {
+      width: 80%;
+    }
+    }
+
+    &:hover {
+      button {
+        cursor: pointer;
+        background-color: bases.$primary-cobalt-blue;
+      }
+  }
+}

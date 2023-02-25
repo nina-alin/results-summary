@@ -1,0 +1,14 @@
+# Avoid accidental upload of the Sketch and Figma design files
+*.sketch
+*.fig
+
+# Avoid accidental XD upload
+*.xd
+
+.DS_Store
+.prettierignore
+
+# Project specific files
+.style-guide.md
+.README-old.md
+/design

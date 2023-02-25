@@ -1,0 +1,24 @@
+@font-face {
+  src: url("../assets/fonts/static/HankenGrotesk-VariableFont_wght.ttf") format("ttf");
+  font-family: "HankenGrotesk";
+  font-weight: 100;
+}
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-family: HankenGrostesk, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.grade {
+  background-color: hsl(241, 81%, 54%);
+}
+
+h1 {
+  color: hsl(221, 100%, 96%);
+}
+
+/*# sourceMappingURL=grade.css.map */

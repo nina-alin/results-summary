@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Hanken+Grotesk&display=swap');
+
+/* font */
+$font-stack: 'Hanken Grostesk', sans-serif;
+$font-weight-normal: 500;
+$font-weight-bold: 700;
+$font-weight-ultrabold: 800;
+
+/* colors */
+$primary-light-red: hsl(0, 100%, 67%);
+$primary-orangey-yellow: hsl(39, 100%, 56%);
+$primary-green-teal: hsl(166, 100%, 37%);
+$primary-cobalt-blue: hsl(234, 85%, 45%);
+$background-light-slate-blue: hsl(252, 100%, 67%);
+$background-light-royal-blue: hsl(241, 81%, 54%);
+$circle-violet-blue: hsla(256, 72%, 46%, 1);
+$circle-persian-blue: hsla(241, 72%, 46%, 0);
+$neutral-white: hsl(0, 0%, 100%);
+$neutral-pale-blue: hsl(221, 100%, 96%);
+$neutral-light-lavender: hsl(241, 100%, 89%);
+$neutral-dark-gray-blue: hsl(224, 30%, 27%);
+
+/* media-query */
+$breakpoint-mobile: 375px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1440px;
+
+body {
+    background-color: $neutral-white;
+    font-family: $font-stack;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+  margin: 22%;
+  display: flex;
+  box-shadow: 18px 20px 41px -14px hsl(252, 100%, 95%);
+  border-radius: 25px;
+
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    margin: 0;
+    box-shadow: none;
+  }
+}

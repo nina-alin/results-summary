@@ -1,0 +1,64 @@
+@use 'bases';
+
+.grade {
+  background: linear-gradient(bases.$background-light-slate-blue, bases.$background-light-royal-blue);
+  width: 100%;
+  border-radius: 30px;
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  @media (max-width: bases.$breakpoint-mobile) {
+    border-radius: 0 0 30px 30px;
+  }
+}
+
+h1 {
+  color: bases.$neutral-light-lavender;
+  font-size: 1.2rem;
+  margin: 3vh 0;
+}
+
+.result {
+  background: linear-gradient(bases.$circle-violet-blue, bases.$circle-persian-blue);
+  border-radius: 100px;
+  height: 20vh;
+  width: 20vh;
+  margin: 0 auto;
+}
+
+.result_content {
+  margin-top: 4vh;
+}
+
+.number {
+  color: bases.$neutral-white;
+  font-size: 4rem;
+  font-weight: bases.$font-weight-bold;
+}
+
+.percentage {
+  margin-top: -1.5vh;
+  color: bases.$neutral-light-lavender;
+  font-size: 1rem;
+  font-weight: bases.$font-weight-normal;
+}
+
+.mention {
+  color: bases.$neutral-white;
+  font-size: 2rem;
+  font-weight: bases.$font-weight-bold;
+  margin: 2vh 0;
+}
+
+.comment_text {
+  color: bases.$neutral-light-lavender;
+  font-size: 1rem;
+  padding: 0 8vh;
+  font-weight: bases.$font-weight-normal;
+  @media (max-width: bases.$breakpoint-mobile) {
+    padding: 0 6vh;
+  }
+}
